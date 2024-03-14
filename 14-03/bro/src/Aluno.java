@@ -10,7 +10,9 @@ public class Aluno {
 
 	// Atributos
 	// ---------
-	String nome;
+	private String nome;
+	private String RA;
+	private String curso;
 
 	// Método Construtor
 	// -----------------
@@ -22,14 +24,14 @@ public class Aluno {
 	// -------------------------------------------------------------
 
 	// método para exibição dos dados do Aluno
-	void exibeDadosAluno() {
+	public void exibeDadosAluno() {
 	
 		// identificação do autor do trabalho
 		System.out.println();
 		System.out.println("---------------------------------");
 		System.out.println("Aluno: " + nome); // nome  do aluno
-		System.out.println("R.A. : ..."); // R.A.  do aluno
-		System.out.println("Curso: ..."); // curso do aluno
+		System.out.println("R.A. : " + RA); // R.A.  do aluno
+		System.out.println("Curso: " + curso); // curso do aluno
 		System.out.println("---------------------------------");
 		System.out.println();
 	
