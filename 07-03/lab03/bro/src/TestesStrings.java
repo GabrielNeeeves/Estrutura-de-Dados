@@ -7,7 +7,6 @@ public class TestesStrings {
     final String nome1 = "Gabriel";
     final String nome2 = "Neves";
     final String nome3 = "Ferreira";
-    //final String nome4 = "Filho";
 
     // Ação 2
     // Criar uma nova String que, por concatenação, resulta no nome completo

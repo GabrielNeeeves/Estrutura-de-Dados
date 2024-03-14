@@ -8,7 +8,7 @@ public class LabMain {
         // instanciação de um objeto da classe 'CoordenadorExecucao' para acesso aos métodos
         CoordenadorExecucao coord = new CoordenadorExecucao();
 
-        // acionamento do método de 'entrada' de 'CoordenadorExecucacao'
+        // acionamento do método de 'entrada' de 'CoordenadorExecução'
         coord.executaTudo();
     }
 }

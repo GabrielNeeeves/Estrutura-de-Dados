@@ -60,9 +60,10 @@ public class CoordenadorExecucao {
 			    
  			    case ATIVIDADE_ARRAYS:
                         System.out.println("Atividade 2: Teste de Arrays !\n");
- 					    // acionamento do método
+ 					    // acionamento do método para teste de Arrays
                         // AQUI...
-
+                        tstArrays.realizaTestes();
+                        
                         break;
 				
 			    case SAIR:

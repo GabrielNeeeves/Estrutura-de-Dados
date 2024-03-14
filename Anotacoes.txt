@@ -9,5 +9,3 @@ for(int i = 0; i < arrayExemplo.length; i++) {
 for(int i : arrayExemplo) {
     sout(i);
 }
-
-3- 
