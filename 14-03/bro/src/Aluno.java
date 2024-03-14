@@ -8,7 +8,7 @@
 // classe que modela a entidade 'Aluno'
 public class Aluno {
 
-	// Atributos
+	// Atributo
 	// ---------
 	private String nome;
 	private String RA;
