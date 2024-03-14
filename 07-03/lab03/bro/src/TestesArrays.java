@@ -29,7 +29,7 @@ public class TestesArrays {
 
         // declaração do array de int
         // AQUI ...
-        int[] arrayTeste = new int[10];
+        int[] numeros = new int[10];
         
         // criação de uma instância (objeto) da classe 'MetodosAvulsos' para permitir o acesso
         // aos respectivos métodos
@@ -38,14 +38,14 @@ public class TestesArrays {
         
         // preenchimento dos valores dos elementos do array com números randômicos
         // AQUI ...
-        for(int i = 0; i < arrayTeste.length; i++) {
-            arrayTeste[i] = metodosAvulsos.geraNumeroRandomico(1, 100);
+        for(int i = 0; i < numeros.length; i++) {
+            numeros[i] = metodosAvulsos.geraNumeroRandomico(1, 100);
         }
         
         // percurso do array para exibição dos números
         System.out.print("\nOs números gerados foram:");
         // AQUI ...
-        for(int i : arrayTeste) {
+        for(int i : numeros) {
             System.out.println(" "+i);
         }
         System.out.println();
