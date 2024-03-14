@@ -39,7 +39,7 @@ public class TestesArrays {
         // preenchimento dos valores dos elementos do array com números randômicos
         // AQUI ...
         for(int i = 0; i < numeros.length; i++) {
-            numeros[i] = metodosAvulsos.geraNumeroRandomico(1, 100);
+            numeros[i] = metodosAvulsos.geraNumeroRandomico(10, 50);
         }
         
         // percurso do array para exibição dos números
