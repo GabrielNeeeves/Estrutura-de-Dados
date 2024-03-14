@@ -1,6 +1,13 @@
-1- for convencional
-for(int i = 0; i < arrayTeste.length; i++) {
-    sout(arrayTeste[i] + " ");
+PERCURSO EM ARRAY UNIDIMENSIONAL
+
+1- 'for' convencional
+for(int i = 0; i < arrayExemplo.length; i++) {
+    sout(arrayExemplo[i] + " ");
 }
 
-2- 
+2- 'for each' (for abreviado)
+for(int i : arrayExemplo) {
+    sout(i);
+}
+
+3- 
