@@ -14,7 +14,7 @@ public class TestesArrays {
         System.out.print("\nMeu nome completo é: ");
         // AQUI ...
         for(int i = 0; i < nomes.length; i++) {
-            System.out.println( " "+nomes[i] );
+            System.out.print( " "+nomes[i] );
         }
         System.out.println(".");
 
@@ -46,7 +46,7 @@ public class TestesArrays {
         System.out.print("\nOs números gerados foram:");
         // AQUI ...
         for(int i : numeros) {
-            System.out.println(" "+i);
+            System.out.print(" "+i);
         }
         System.out.println();
 
@@ -65,7 +65,13 @@ public class TestesArrays {
         // percurso do array bidimensional para exibição dos números
         System.out.println("\nOs números armazenados na matriz são:");
         // AQUI ...
-        System.out.println();
+        for(int i = 0; i < matriz.length; i++) {
+            System.out.print("Linnha "+i+":");
+            for(int j = 0; j < matriz[i].length; j++) { // Percorre colunas da linha i
+                System.out.print( " " + matriz[i][j] );
+            }
+            System.out.println();
+        }
 
     }
 
