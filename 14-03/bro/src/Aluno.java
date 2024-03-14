@@ -10,13 +10,46 @@ public class Aluno {
 
 	// Atributos
 	// ---------
-	String nome;
+	private Long ra;
+	private String nome;
+	private String curso;
 
 	// Método Construtor
 	// -----------------
+	public Aluno(Long ra, String nome, String curso) {
+		this.ra = ra;
+		this.nome = nome;
+		this.curso = curso;
+	}
 
 	// Métodos 'getters' e 'setters' (sempre 'private')
 	// ------------------------------------------------
+	//RA
+	public Long getRa() {
+		return ra;
+	}
+
+	public void setRa(Long ra) {
+		this.ra = ra;
+	}
+
+	//NOME
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	//CURSO
+	public String getCurso() {
+		return curso;
+	}
+
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
 
 	// Outros métodos ('public' ou 'private', conforme a necessidade
 	// -------------------------------------------------------------
