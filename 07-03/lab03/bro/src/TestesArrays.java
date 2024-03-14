@@ -29,11 +29,12 @@ public class TestesArrays {
 
         // declaração do array de int
         // AQUI ...
-        
+        int[] arrayTeste = new int[10];
         
         // criação de uma instância (objeto) da classe 'MetodosAvulsos' para permitir o acesso
         // aos respectivos métodos
         // AQUI ...
+        MetodosAvulsos metodosAvulsos = new MetodosAvulsos();
         
         // preenchimento dos valores dos elementos do array com números randômicos
         // AQUI ...
