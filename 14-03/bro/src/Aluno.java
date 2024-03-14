@@ -10,13 +10,13 @@ public class Aluno {
 
 	// Atributos
 	// ---------
-	private Long ra;
+	private String ra;
 	private String nome;
 	private String curso;
 
 	// Método Construtor
 	// -----------------
-	public Aluno(Long ra, String nome, String curso) {
+	public Aluno(String ra, String nome, String curso) {
 		this.ra = ra;
 		this.nome = nome;
 		this.curso = curso;
@@ -25,11 +25,11 @@ public class Aluno {
 	// Métodos 'getters' e 'setters' (sempre 'private')
 	// ------------------------------------------------
 	//RA
-	public Long getRa() {
+	public String getRa() {
 		return ra;
 	}
 
-	public void setRa(Long ra) {
+	public void setRa(String ra) {
 		this.ra = ra;
 	}
 
