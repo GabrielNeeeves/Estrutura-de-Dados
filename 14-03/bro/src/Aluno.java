@@ -16,6 +16,11 @@ public class Aluno {
 
 	// Método Construtor
 	// -----------------
+	public Aluno(String nomeRecebido, String raRecebido, String cursoRecebido) {
+		this.RA = raRecebido;
+		this.nome = nomeRecebido;
+		this.curso = cursoRecebido;
+	}
 
 	// Métodos 'getters' e 'setters' (sempre 'private')
 	// ------------------------------------------------
