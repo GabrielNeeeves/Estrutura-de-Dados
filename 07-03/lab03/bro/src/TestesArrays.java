@@ -38,10 +38,16 @@ public class TestesArrays {
         
         // preenchimento dos valores dos elementos do array com números randômicos
         // AQUI ...
+        for(int i = 0; i < arrayTeste.length; i++) {
+            arrayTeste[i] = metodosAvulsos.geraNumeroRandomico(1, 100);
+        }
         
         // percurso do array para exibição dos números
         System.out.print("\nOs números gerados foram:");
         // AQUI ...
+        for(int i : arrayTeste) {
+            System.out.println(" "+i);
+        }
         System.out.println();
 
     }
