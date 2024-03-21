@@ -52,8 +52,8 @@ public class TestesArrayPessoas {
         // uma das pessoas cujos dados estão armazenados no array.
         // EXEMPLO: dados da pessoa da posição 2 do array
         // OPCIONALMENTE, pode obter os novos dados via teclado
-        pessoas[2].setNome ( "Nome de Teste");
-        pessoas[2].setCpf("123456789");
+        // pessoas[2].setNome ( "Nome de Teste");
+        // pessoas[2].setCpf("123456789");
 
         // Ação 5
         // Exibir o conteúdo do array utilizando o comando for (na versão simplificada, que não exige
