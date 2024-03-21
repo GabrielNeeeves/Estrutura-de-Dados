@@ -9,3 +9,13 @@ for(int i = 0; i < arrayExemplo.length; i++) {
 for(int i : arrayExemplo) {
     sout(i);
 }
+
+=== BUSCAS ===
+
+1. BUSCA LINEAR 
+- vetor não precisa estar classificado
+- pior caso (N perguntas)
+- força bruta (elemente por elemento)
+- sempre funciona
+
+2. 
