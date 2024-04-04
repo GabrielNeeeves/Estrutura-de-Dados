@@ -9,7 +9,7 @@
 public class MetodosGenericos {
 
     // método genérico printArray
-    public < E > void printArray( E[] inputArray ) {
+    public < E > void printArray( E[] inputArray) {
         // exibe elementos do array
         for ( E element : inputArray ) {
             System.out.printf("%5s ", element);
@@ -19,5 +19,17 @@ public class MetodosGenericos {
 
     // método genérico buscaArray
     // AQUI ...
+    public < E > int buscaArray( E[] inputArray, E key ) {
+        // faz a busca linear nos elementos do array
+        for( int i = 0; i < inputArray.length; i++ ) {
+            // se encontrou, já pode acabar - retorna a posição i
+            if ( inputArray[i].equals(key) ) {
+                return i;
+            }
+        }
+
+        // se terminou a busca sem encontrar, retorna -1
+        return -1;
+    } // fim do método printArray
     
 }

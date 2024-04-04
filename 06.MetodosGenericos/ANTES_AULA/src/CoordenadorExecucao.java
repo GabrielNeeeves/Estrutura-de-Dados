@@ -33,6 +33,7 @@ public class CoordenadorExecucao {
         Integer[] intArrayE     = {  1,   2,   3,   4,   5,   6,   7};
         Double[]  doubleArrayE  = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
         // AQUI ...
+        String[] stringArrayE = {"Gabriel", "Neves", "Ferreira"};
 
         // declaração de variáveis a serem usadas (independentemente da Atividade)
         int escolha;
@@ -110,7 +111,7 @@ public class CoordenadorExecucao {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
                     // 2. conteúdo inexistente
-                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'int' ... ");
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'double' ... ");
                     rBI = independente.buscaArrayDouble(doubleArray,9.9);
                     if ( rBI == -1 ) {
                         System.out.println("NÃO ENCONTRADO !");
@@ -160,24 +161,76 @@ public class CoordenadorExecucao {
                     
                     // acionamento do método para impressão do 'array' de 'String'
                     // AQUI ...
+                    System.out.println("Exibindo conteúdo do 'array' de 'String':");
+                    sobrecarregado.printArray(stringArray);
                     
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
+                    int varAuxiliar;
                     
                     // exemplo de busca por um conteúdo no 'array' de 'int'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5 no 'array' de 'int' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(intArray, 5);
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 9 no 'array' de 'int' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(intArray, 9);
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
+
 
                     // exemplo de busca por um conteúdo no 'array' de 'double'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5.5 no 'array' de 'double' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(doubleArray,5.5);
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'double' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(doubleArray,9.9);
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
 
                     // exemplo de busca por um conteúdo no 'array' de 'String'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 'Neves' no 'array' de 'String' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(stringArray,"Neves");
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 'Asdrubol' no 'array' de 'String' ... ");
+                    varAuxiliar = sobrecarregado.buscaArray(stringArray,"Asdrubol");
+                    if ( varAuxiliar == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + varAuxiliar);
+                    }
 
                     break;
 
@@ -198,24 +251,76 @@ public class CoordenadorExecucao {
                     
                     // acionamento do método para impressão do 'array' de objetos 'String'
                     // AQUI ...
+                    System.out.println("Exibindo conteúdo do 'array' de 'String':");
+                    generico.printArray(stringArrayE);
                     
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
+                    int aux;
                     
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Integer'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5 no 'array' de 'int' ... ");
+                    aux = generico.buscaArray(intArrayE, 5);
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 9 no 'array' de 'int' ... ");
+                    aux = generico.buscaArray(intArrayE, 9);
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
 
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Double'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5.5 no 'array' de 'double' ... ");
+                    aux = generico.buscaArray(doubleArrayE,5.5);
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'double' ... ");
+                    aux = generico.buscaArray(doubleArrayE,9.9);
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
 
                     // exemplo de busca por um conteúdo no 'array' de objetos 'String'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 'Neves' no 'array' de 'double' ... ");
+                    aux = generico.buscaArray(stringArrayE, "Neves");
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
+                    
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 'Asdrubol' no 'array' de 'double' ... ");
+                    aux = generico.buscaArray(stringArrayE, "Asdrubol");
+                    if ( aux == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + aux);
+                    }
 
                     break;
 
